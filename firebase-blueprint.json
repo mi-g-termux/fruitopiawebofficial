@@ -1,0 +1,636 @@
+{
+  "entities": {
+    "SiteSettings": {
+      "title": "SiteSettings",
+      "description": "Customizable homepage metadata and theme configuration",
+      "type": "object",
+      "properties": {
+        "websiteName": {
+          "type": "string"
+        },
+        "siteTitle": {
+          "type": "string"
+        },
+        "logoUrl": {
+          "type": "string"
+        },
+        "logoEmoji": {
+          "type": "string"
+        },
+        "faviconUrl": {
+          "type": "string"
+        },
+        "heroBadge": {
+          "type": "string"
+        },
+        "heroTitleLine1": {
+          "type": "string"
+        },
+        "heroTitleLine2": {
+          "type": "string"
+        },
+        "heroSubtitle": {
+          "type": "string"
+        },
+        "heroButtonText": {
+          "type": "string"
+        },
+        "heroTimeBadge": {
+          "type": "string"
+        },
+        "footerText": {
+          "type": "string"
+        },
+        "contactPhone": {
+          "type": "string"
+        },
+        "contactEmail": {
+          "type": "string"
+        },
+        "contactAddress": {
+          "type": "string"
+        },
+        "socialFacebook": {
+          "type": "string"
+        },
+        "socialInstagram": {
+          "type": "string"
+        },
+        "socialTwitter": {
+          "type": "string"
+        },
+        "promoBannerEnabled": {
+          "type": "boolean"
+        },
+        "promoBannerText": {
+          "type": "string"
+        },
+        "themePrimaryColor": {
+          "type": "string"
+        },
+        "themeBgColor": {
+          "type": "string"
+        },
+        "themeHeaderFont": {
+          "type": "string"
+        },
+        "trademarkText": {
+          "type": "string"
+        },
+        "currency": {
+          "type": "string"
+        },
+        "currencySymbol": {
+          "type": "string"
+        },
+        "currencyPosition": {
+          "type": "string"
+        },
+        "orderTrackerEnabled": {
+          "type": "boolean"
+        },
+        "orderTrackerInNavbar": {
+          "type": "boolean"
+        },
+        "smtpEnabled": {
+          "type": "boolean"
+        },
+        "smtpHost": {
+          "type": "string"
+        },
+        "smtpPort": {
+          "type": "number"
+        },
+        "smtpEmail": {
+          "type": "string"
+        },
+        "smtpSecret": {
+          "type": "string"
+        },
+        "smtpUser": {
+          "type": "string"
+        },
+        "smtpPass": {
+          "type": "string"
+        },
+        "emailOtpSubject": {
+          "type": "string"
+        },
+        "emailOtpExpiryMinutes": {
+          "type": "number"
+        }
+      }
+    },
+    "PaymentSettings": {
+      "title": "PaymentSettings",
+      "description": "Configurable payment processors and fee rules",
+      "type": "object",
+      "properties": {
+        "codEnabled": {
+          "type": "boolean"
+        },
+        "codDisplayName": {
+          "type": "string"
+        },
+        "codSubtext": {
+          "type": "string"
+        },
+        "codColor": {
+          "type": "string"
+        },
+        "bkashManualEnabled": {
+          "type": "boolean"
+        },
+        "bkashManualDisplayName": {
+          "type": "string"
+        },
+        "bkashManualNumber": {
+          "type": "string"
+        },
+        "bkashManualQrUrl": {
+          "type": "string"
+        },
+        "bkashManualInstructions": {
+          "type": "string"
+        },
+        "bkashManualColor": {
+          "type": "string"
+        },
+        "bkashManualSubtext": {
+          "type": "string"
+        },
+        "nagadManualEnabled": {
+          "type": "boolean"
+        },
+        "nagadManualDisplayName": {
+          "type": "string"
+        },
+        "nagadManualNumber": {
+          "type": "string"
+        },
+        "nagadManualQrUrl": {
+          "type": "string"
+        },
+        "nagadManualInstructions": {
+          "type": "string"
+        },
+        "nagadManualColor": {
+          "type": "string"
+        },
+        "nagadManualSubtext": {
+          "type": "string"
+        },
+        "rocketManualEnabled": {
+          "type": "boolean"
+        },
+        "rocketManualDisplayName": {
+          "type": "string"
+        },
+        "rocketManualNumber": {
+          "type": "string"
+        },
+        "rocketManualInstructions": {
+          "type": "string"
+        },
+        "rocketManualColor": {
+          "type": "string"
+        },
+        "rocketManualSubtext": {
+          "type": "string"
+        },
+        "bankEnabled": {
+          "type": "boolean"
+        },
+        "bankDisplayName": {
+          "type": "string"
+        },
+        "bankDetails": {
+          "type": "string"
+        },
+        "bankColor": {
+          "type": "string"
+        },
+        "bankSubtext": {
+          "type": "string"
+        },
+        "cardManualEnabled": {
+          "type": "boolean"
+        },
+        "cardManualDisplayName": {
+          "type": "string"
+        },
+        "cardManualInstructions": {
+          "type": "string"
+        },
+        "cardManualColor": {
+          "type": "string"
+        },
+        "cardManualSubtext": {
+          "type": "string"
+        },
+        "stripeEnabled": {
+          "type": "boolean"
+        },
+        "stripeDisplayName": {
+          "type": "string"
+        },
+        "stripePublicKey": {
+          "type": "string"
+        },
+        "stripeSecretKey": {
+          "type": "string"
+        },
+        "stripeColor": {
+          "type": "string"
+        },
+        "stripeSubtext": {
+          "type": "string"
+        },
+        "paypalEnabled": {
+          "type": "boolean"
+        },
+        "paypalDisplayName": {
+          "type": "string"
+        },
+        "paypalClientId": {
+          "type": "string"
+        },
+        "paypalColor": {
+          "type": "string"
+        },
+        "paypalSubtext": {
+          "type": "string"
+        },
+        "shippingFee": {
+          "type": "number"
+        },
+        "taxPercentage": {
+          "type": "number"
+        }
+      }
+    },
+    "AdminCredentials": {
+      "title": "AdminCredentials",
+      "description": "Secured master administrator login credentials",
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string"
+        },
+        "passwordHash": {
+          "type": "string"
+        }
+      }
+    },
+    "InstallStatus": {
+      "title": "InstallStatus",
+      "description": "App installation status",
+      "type": "object",
+      "properties": {
+        "installed": {
+          "type": "boolean"
+        }
+      }
+    },
+    "Category": {
+      "title": "Category",
+      "description": "Catalog menu subdivision filters",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "emoji": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "isVisible": {
+          "type": "boolean"
+        },
+        "isNavbarFeatured": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "emoji",
+        "slug"
+      ]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "Sellable menu juice/smoothie catalog models",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "price": {
+          "type": "number"
+        },
+        "salePrice": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "stock": {
+          "type": "number"
+        },
+        "image": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "ingredients": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rating": {
+          "type": "number"
+        },
+        "reviewsCount": {
+          "type": "number"
+        },
+        "isFeatured": {
+          "type": "boolean"
+        },
+        "isActive": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "price",
+        "stock",
+        "image",
+        "category"
+      ]
+    },
+    "Coupon": {
+      "title": "Coupon",
+      "description": "Promo discounts triggered via string checking",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "discountPercentage": {
+          "type": "number"
+        },
+        "expiryDate": {
+          "type": "string"
+        },
+        "usageLimit": {
+          "type": "number"
+        },
+        "usedCount": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "code",
+        "discountPercentage"
+      ]
+    },
+    "Review": {
+      "title": "Review",
+      "description": "Product opinions submitted by end users",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "productId": {
+          "type": "string"
+        },
+        "productName": {
+          "type": "string"
+        },
+        "reviewerName": {
+          "type": "string"
+        },
+        "rating": {
+          "type": "number"
+        },
+        "comment": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "isApproved": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "productId",
+        "reviewerName",
+        "rating",
+        "comment",
+        "isApproved"
+      ]
+    },
+    "DeliveryZone": {
+      "title": "DeliveryZone",
+      "description": "Courier shipping fees mapped by destination address keywords",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "keywords": {
+          "type": "string"
+        },
+        "fee": {
+          "type": "number"
+        },
+        "minDays": {
+          "type": "number"
+        },
+        "maxDays": {
+          "type": "number"
+        },
+        "isActive": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "keywords",
+        "fee"
+      ]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Receipts of customers e-commerce transactions",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "customerName": {
+          "type": "string"
+        },
+        "customerEmail": {
+          "type": "string"
+        },
+        "customerPhone": {
+          "type": "string"
+        },
+        "deliveryAddress": {
+          "type": "string"
+        },
+        "deliveryZoneId": {
+          "type": "string"
+        },
+        "deliveryFee": {
+          "type": "number"
+        },
+        "paymentMethod": {
+          "type": "string"
+        },
+        "paymentDetails": {
+          "type": "object"
+        },
+        "items": {
+          "type": "array"
+        },
+        "subtotal": {
+          "type": "number"
+        },
+        "couponCode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "discountAmount": {
+          "type": "number"
+        },
+        "taxAmount": {
+          "type": "number"
+        },
+        "total": {
+          "type": "number"
+        },
+        "status": {
+          "type": "string"
+        },
+        "statusLogs": {
+          "type": "array"
+        },
+        "createdAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "customerName",
+        "customerPhone",
+        "items",
+        "total",
+        "status",
+        "createdAt"
+      ]
+    },
+    "Subscriber": {
+      "title": "Subscriber",
+      "description": "Newsletter subscription email list",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "subscribedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "email"
+      ]
+    }
+  },
+  "firestore": {
+    "settings/site_settings": {
+      "schema": "SiteSettings",
+      "description": "Direct core site metadata node override"
+    },
+    "settings/payment_settings": {
+      "schema": "PaymentSettings",
+      "description": "Central cashier billing rules override"
+    },
+    "settings/admin_credentials": {
+      "schema": "AdminCredentials",
+      "description": "Salted master dashboard keys"
+    },
+    "settings/install_status": {
+      "schema": "InstallStatus",
+      "description": "Application environment bootstrap flag"
+    },
+    "categories/{categoryId}": {
+      "schema": "Category",
+      "description": "Filtering slots for dynamic juices catalog"
+    },
+    "products/{productId}": {
+      "schema": "Product",
+      "description": "Dynamic stock models of juices and smoothies"
+    },
+    "coupons/{couponId}": {
+      "schema": "Coupon",
+      "description": "Cash discount code records"
+    },
+    "reviews/{reviewId}": {
+      "schema": "Review",
+      "description": "Customer feedback and scores review logs"
+    },
+    "delivery_zones/{zoneId}": {
+      "schema": "DeliveryZone",
+      "description": "Available delivery dispatch methods"
+    },
+    "orders/{orderId}": {
+      "schema": "Order",
+      "description": "Transactions history logs"
+    },
+    "newsletter/{subscriberEmail}": {
+      "schema": "Subscriber",
+      "description": "Subscribed address registers"
+    },
+    "registered_users/{email}": {
+      "description": "Registered user accounts. Document ID is email (lowercased).",
+      "fields": {
+        "name": "string",
+        "email": "string",
+        "phone": "string",
+        "address": "string",
+        "city": "string",
+        "passwordHash": "string"
+      }
+    }
+  }
+}

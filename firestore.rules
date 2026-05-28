@@ -1,0 +1,64 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper: checks if the database lacks installation registration status
+    function isNotInstalled() {
+      return !exists(/databases/$(database)/documents/settings/install_status) ||
+             get(/databases/$(database)/documents/settings/install_status).data.installed != true;
+    }
+
+    // System configurations & master secret keys
+    match /settings/{docId} {
+      allow read, write: if true;
+    }
+
+    // Catalog subdivisions
+    match /categories/{categoryId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Dynamic stock catalog items
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Cash discount items
+    match /coupons/{couponId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // General shipping zones
+    match /delivery_zones/{zoneId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // User reviews & feedback
+    match /reviews/{reviewId} {
+      allow read: if true;
+      allow create: if request.resource.data.isApproved == false;
+      allow update, delete: if true;
+    }
+
+    // Transaction orders
+    match /orders/{orderId} {
+      allow read, create: if true;
+      allow update, delete: if true;
+    }
+
+    // Subscribed contacts
+    match /newsletter/{email} {
+      allow read, write: if true;
+    }
+
+    // Registered user accounts (email is doc ID)
+    match /registered_users/{email} {
+      allow read, write: if true;
+    }
+
+  }
+}
